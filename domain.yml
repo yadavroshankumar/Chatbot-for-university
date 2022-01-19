@@ -1,0 +1,55 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - academics
+  - ffcs
+  - coe
+  - international_relations
+  - library
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How May I help you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by VIT."
+
+
+  utter_academics:
+  - text: "Teaching at VIT University is structured around Thirteen schools of study. The university offers 27 Undergraduate, 30 Postgraduate, 4 Integrated Programmes and 4 Research programmes. In addition to full-time/part-time Ph.D., M.S.(BY RESEARCH) Degrees in Engineering and Management Disciplines, M.Phil, Ph.D., in Science and Languages, Integrated Ph.D. programmes also offered for engineering disciplines in selected schools.\n More at <a href='http://vit.ac.in/academics'>this link</a>"
+  utter_ffcs:
+  - text: "FFCS is a way in which a student has complete freedom in tailoring his course the way he wishes. It accommodates the wants and needs of the entire student community as a whole. With this system, a student can prepare his/her own timetable with the specific courses he/she intends to do in that semester along with the timings of classes and choice of professors.\n More info at <a href='http://vit.ac.in/academics/ffcs'>this link</a>"
+  utter_coe:
+  - text: "The Office of the Controller of Examinations is responsible for preparation, scheduling, and conduct of Final Assessment Test (FAT) for all the programmes offered by the institute. It also facilitates central valuation of answer scripts and timely publication of Results.\n More information at <a href='http://vit.ac.in/academics/coe'>this link</a>"
+
+  utter_international_relations:
+  - text: "A very sophisticated International Relations Office has been established to help in the internationalization efforts. The office facilitates the initiation and follow-up of international cooperation with substantial faculty & student exchange, joint R&D and Joint Programmes. It also takes care of the international students enrolled in the University in addition to the already existing exemplary guest care.\n
+  \n More information can be found at <a href='http://vit.ac.in/academics/internationalRelations'>this link</a>"
+
+  utter_library:
+  - text: "The Central Library is centrally air-conditioned, well-protected with fire alarm, Flap Barrier and CCTV surveillance. It has specialized collections of Books, Journals & other resources in Sciences, Engineering and Technology, Biotechnology, Humanities, Social Sciences and Management ranging from printed books, e-books, back volumes and CDs/DVDs.\n More information can be found at <a href='http://vit.ac.in/academics/library'>this link</a>"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
