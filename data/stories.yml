@@ -1,0 +1,52 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: story_academics
+  steps:
+  - intent: academics
+  - action: utter_academics
+- story: story_ffcs
+  steps:
+  - intent: ffcs
+  - action: utter_ffcs
+- story: story_coe
+  steps:
+  - intent: coe
+  - action: utter_coe
+
+- story: story_library
+  steps:
+  - intent: library
+  - action: utter_library
+- story: stories_international_relations
+  steps:
+  - intent: international_relations
+  - action: utter_international_relations
